@@ -1,26 +1,33 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background:  #fef69e;
+
 }
 
 /* TOPO */
 .topo {
   background: #e8e668;
   color: white;
-  padding: 16px 24px;
+  padding: 30px 24px;
+  display: flex;
+  justify-content: center;
+
 }
 
 /* MENU */
 .menu {
   background: #60cf63;
+  
 }
 
 .menu ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto; /* centraliza */
   padding: 0 24px;
-  display: flex;              /* deixa horizontal */
+  display: flex;
   gap: 24px;
+  justify-content: center; /* garante centralização */
 }
 
 .menu li {
@@ -31,8 +38,67 @@ body {
   color: #15171b;
   text-decoration: none;
   font-weight: 500;
+  
 }
 
 .menu a:hover {
   color: #38bdf8;
+}
+.logo {
+ 
+ width: 170px;
+ height: 100px;
+ padding-right: 20px;
+}
+.sobre {
+  background: #fef69e; /* amarelo bem claro */
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Georgia', serif; /* mais elegante */
+}
+
+.sobre h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2e7d32; /* verde */
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #444;
+  line-height: 1.5;
+}
+
+.card ul {
+  padding-left: 18px;
+  color: #444;
+}
+
+.card li {
+  margin-bottom: 6px;
 }
